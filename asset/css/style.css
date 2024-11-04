@@ -1,14 +1,89 @@
-body{
-    padding: 4px;
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
 }
-.title{
-    font-weight: bold;
-    color: rgb(226, 83, 0);
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
 }
-h1{
-    font-size: 40px;
-    color: red;
+.main-nav a{
+    background-color: aqua;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    box-shadow: 0 1px 5px rgba(110, 110, 110, 0.8);
 }
-h2{
-    color: blue;
+.main-nav a:hover{
+    background-color: blanchedalmond;
+    color: rgb(114, 133, 173);
+}
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'box box box-a'
+    'box box box-b';
+}
+.box{
+    grid-area: box;
+    min-height: 400px;
+    background: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(187, 184, 184,0.8);
+}
+.box h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: #50386e;
+}
+.box p{
+    font-size: 1rem;
+    margin-top: 0;
+    color: rgb(58, 4, 185);
+}
+.box{
+    background-color: rgb(114, 90, 58);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(187, 184, 184,0.8);
+    padding: 1rem;
+}
+.box-a{
+    grid-area: box-a;
+}
+.box-b{
+    grid-area: box-b;
+}
+.box p{
+    font-size: 2rem;
+}
+.boxer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.boxer2{
+    background-color: dodgerblue;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 1px 5px rgba(187, 184, 184,0.8);
+}
+.info{
+    background-color: dodgerblue;
+    box-shadow: 0 1px 5px rgba(187, 184, 184,0.8);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
 }
